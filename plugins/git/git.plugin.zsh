@@ -191,7 +191,7 @@ alias gk='\gitk --all --branches'
 alias gke='\gitk --all $(git log -g --pretty=%h)'
 
 alias gl='git log'
-alias glg='git log --stat'
+alias gls='git log --stat'
 alias glgp='git log --stat -p'
 alias glgg='git log --graph'
 alias glgga='git log --graph --decorate --all'
@@ -205,6 +205,8 @@ alias glola="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgr
 alias glog='git log --oneline --decorate --graph'
 alias gloga='git log --oneline --decorate --graph --all'
 alias glp="_git_log_prettily"
+alias glg="git log --graph --pretty='%C(yellow)%h%C(reset) %C(bold)%s%C(reset) %C(green)%cr -%C(yellow)%d%C(reset) %C(blue)\"%an\" <%aE>%C(reset)' --abbrev-commit"
+alias gdag="git log --graph --pretty='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order"
 
 alias gm='git merge'
 alias gmom='git merge origin/$(git_main_branch)'
