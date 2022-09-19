@@ -3,6 +3,7 @@
 #
 
 # ls, the common ones I use a lot shortened for rapid fire usage
+# alias ls='gls --color -h --group-directories-first'
 alias l='ls -lFh'     #size,show type,human readable
 alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
@@ -14,6 +15,7 @@ alias lart='ls -1Fcart'
 alias lrt='ls -1Fcrt'
 alias lsr='ls -lARFh' #Recursive list of files and directories
 alias lsn='ls -1'     #A column contains name of files and directories
+alias l1='ls -1'
 
 alias zshrc='${=EDITOR} ${ZDOTDIR:-$HOME}/.zshrc' # Quick access to the .zshrc file
 

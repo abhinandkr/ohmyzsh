@@ -209,8 +209,10 @@ alias git-svn-dcommit-push='git svn dcommit && git push github $(git_main_branch
 alias gk='\gitk --all --branches &!'
 alias gke='\gitk --all $(git log -g --pretty=%h) &!'
 
-alias gl='git pull'
-alias glg='git log --stat'
+alias gl='git log'
+alias glg="git log --graph --format=format:'%C(yellow)%h%C(reset) %C(bold)%s%C(reset) %C(green)%cr -%C(yellow)%d%C(reset) %C(blue)<%an> <%aE>%C(reset)' --abbrev-commit"
+alias gldag="git log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)<>%an> <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order"
+alias glst='git log --stat'
 alias glgp='git log --stat -p'
 alias glgg='git log --graph'
 alias glgga='git log --graph --decorate --all'
@@ -232,7 +234,6 @@ alias gmtlvim='git mergetool --no-prompt --tool=vimdiff'
 alias gmum='git merge upstream/$(git_main_branch)'
 alias gma='git merge --abort'
 
-alias gp='git push'
 alias gpd='git push --dry-run'
 alias gpf='git push --force-with-lease'
 alias gpf!='git push --force'
@@ -276,7 +277,7 @@ alias gsi='git submodule init'
 alias gsps='git show --pretty=short --show-signature'
 alias gsr='git svn rebase'
 alias gss='git status -s'
-alias gst='git status'
+alias gs='git status'
 
 # use the default stash push on git 2.13 and newer
 is-at-least 2.13 "$git_version" \

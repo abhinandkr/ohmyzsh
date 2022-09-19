@@ -8,3 +8,9 @@
 # brainstormr=~/Projects/development/planetargon/brainstormr
 # cd $brainstormr
 #
+
+[[ -f ${HOME}/.zsh_aliases ]] && source ${HOME}/.zsh_aliases
+
+[[ -f ${HOME}/.zsh_keys ]] && source ${HOME}/.zsh_keys
+
+[[ -f ${HOME}/.zsh_new_paths ]] && source ${HOME}/.zsh_new_paths
